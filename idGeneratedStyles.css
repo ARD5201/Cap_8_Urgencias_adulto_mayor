@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'NewCenturySchlbk';
+    src: url('NewCenturyScbk.ttf');
+}
+
+@font-face {
+    font-family: 'PageSansTF-Bold';
+    src: url('PSnBdTf.ttf');
+}
+
 body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 	margin:0;
 	padding:0;
@@ -5,15 +15,22 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 }
 body {
 	-epub-hyphens:auto;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+	box-sizing: border-box;
 }
 p._0_lecturas-rec {
 	color:#000000;
 	font-family:NewCenturySchlbk, serif;
-	font-size:9px;
+	font-size:14px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.294;
+	line-height:1.6;
 	margin-bottom:3px;
 	margin-left:15px;
 	margin-right:0;
@@ -31,7 +48,7 @@ p._0_lecturas-rec {
 p._1_tit_lecturas {
 	color:#000000;
 	font-family:"PageSansTF-Bold", sans-serif;
-	font-size:10px;
+	font-size:16px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
@@ -63,4 +80,13 @@ p.ParaOverride-2 {
 }
 div._idGenObjectStyleOverride-1 {
 	border-width:0px;
+}
+
+@media (max-width: 768px) {
+
+	body{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 }
